@@ -1,6 +1,6 @@
-package com.abidemiope;
+package lesson1;
 
-public class Main {
+public class Lesson1 {
     public static void main(String[] args) {
         System.out.println("I'm a bad guy"); // Cap
         /* The code below will print the words Hello World
