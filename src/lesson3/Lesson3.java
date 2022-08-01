@@ -2,7 +2,7 @@ package lesson3;
 
 public class Lesson3 {
     public static void main(String[] args) {
-        String sentence = "gboyin gives a fuck";
+        String sentence = "Gboyin gives a fuck";
 
         int len = sentence.length();
 
