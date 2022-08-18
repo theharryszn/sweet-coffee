@@ -11,7 +11,6 @@ public class Arrays {
 
         int[] scores = {2, 4, 6, 7};
 
-
         System.out.println(names[names.length - 1]);
 
         names[1] = "Harry";
