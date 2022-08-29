@@ -18,10 +18,10 @@ public class List {
 //            System.out.println(name);
 //        }
         int num = 12;
-        Box<int, String> box = new Box(12);
+        Box<Integer, String> box = new Box(12);
         Box<String, String> box1 = new Box("hello");
 
-        Box<LionClass, int> box2 = new Box(new LionClass());
+        Box<LionClass, Integer> box2 = new Box(new LionClass());
 
     }
 }
