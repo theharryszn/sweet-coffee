@@ -16,6 +16,9 @@ public class CS {
         int secs = scanner.nextInt();
         scanner.nextLine();
 
+        LocalDateTime dateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yy : hh mm ss");
+        System.out.println(dateTime.format(formatter));
         System.out.println("Starting");
 
         RandomFn randomFn = (seconds) -> new Thread(() -> {
@@ -24,9 +27,8 @@ public class CS {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            LocalDateTime dateTime = LocalDateTime.now();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yy : hh mm ss");
-            System.out.println(dateTime.format(formatter));
+            LocalDateTime dateTime2 = LocalDateTime.now();
+            System.out.println(dateTime2.format(formatter));
             System.out.println("Ended");
         }).start();
 

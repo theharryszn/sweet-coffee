@@ -4,6 +4,10 @@ public class Threads {
     public static void main(String[] args) {
         Async async = new Async();
         async.start();
+
+        Thread thread = new Thread(new Async2());
+        thread.start();
+
         while (async.isAlive()) {
             System.out.println("Waiting...");
         }
